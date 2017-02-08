@@ -12,7 +12,7 @@ export default new Router({
     {
       path: '/admin',
       name: 'Admin',
-      beforeEnter : m.auth,
+      beforeEnter: m.auth,
       component: Admin{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
     },
     {

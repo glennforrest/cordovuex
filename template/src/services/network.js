@@ -5,11 +5,11 @@ import store from '../store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 const API_URL = process.env.API_URL{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
-module.exports =   { 
-  getAuthHeader() {
+export default {
+  getAuthHeader () {
     {{#vuex}}
     return {
-          'Authorization': 'Bearer ' + store.getters['auth/getToken']{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+      'Authorization': 'Bearer ' + store.getters['auth/getToken']{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
     }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
     {{else}}
     return {}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}

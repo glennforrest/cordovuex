@@ -1,4 +1,4 @@
-# vue-webpack-boilerplate
+# Vue Webpack Template wtih Cordova, Vuex and others
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 

@@ -7,10 +7,16 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
+{{#veux}}
+import store from './store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/veux}}
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  {{#veux}}
+  store,
+  {{/veux}}
   {{#router}}
   router,
   {{/router}}

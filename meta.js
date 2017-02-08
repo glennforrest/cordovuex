@@ -20,9 +20,25 @@ module.exports = {
       "message": "Project description",
       "default": "A Vue.js project"
     },
+    "app_id": {
+      "type": "string",
+      "required": true,
+      "message": "Cordova App Id",
+      "default": "org.something.appname"
+    },
     "author": {
       "type": "string",
       "message": "Author"
+    },
+    "email": {
+      "type": "string",
+      "required": false,
+      "message": "Author Email"
+    },
+    "webpage": {
+      "type": "string",
+      "required": false,
+      "message": "Author Web Page"
     },
     "build": {
       "type": "list",

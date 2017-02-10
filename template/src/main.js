@@ -11,6 +11,9 @@ import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import store from './store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/veux}}
 
+/* eslint no-unused-vars: "off" */
+import cordova from './cordova'
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

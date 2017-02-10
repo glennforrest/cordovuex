@@ -40,6 +40,12 @@ module.exports = {
       "required": false,
       "message": "Author Web Page"
     },
+    "sender_id": {
+      "type": "string",
+      "required": false,
+      "message": "Android sender id for Push Notifications",
+      "default": "132456789"
+    },
     "build": {
       "type": "list",
       "message": "Vue build",
